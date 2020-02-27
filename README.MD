@@ -5,11 +5,13 @@ Presented at [CVPR 2020](http://cvpr2020.thecvf.com/)
 ### Social-STGCNN
 We propose the Social Spatio-Temporal Graph Convolutional Neural Network (Social-STGCNN), which models the problem of human trajectory prediction as a spatio-temporal graph. Our results show an improvement over the state of art by 20\% on the Final Displacement Error (FDE) and an improvement on the Average Displacement Error (ADE) with 8.5 times less parameters and up to 48 times faster inference speed than previously reported methods. In addition, our model is data efficient, and exceeds previous state of the art on the ADE metric with only 20\% of the training data. We propose a kernel function to embed the social interactions between pedestrians within the adjacency matrix.
 
+Our model inference speed is 0.002s(500Hz) using only 7.6K parameters.
+
 #### Model
 <div align='center'>
 <img src="images/social-stgcnn-model.jpg"></img>
 </div>
-Socialt-STGCNN consists of 2 building blocks: <br />
+Social-STGCNN model consists of 2 building blocks: <br />
 1- ST-GCNN: A Spatio-Tempral Graph CNN that creates a spatio-temporal graph embedding representing the previous pedestrians trajectories. <br />
 2- TXP-CNN: A Time-Extrapolator CNN that utilizes the spatio-temporal graph embedding to predict future trajectories.<br />
 
@@ -34,7 +36,7 @@ or you can have everything set up by running:
 pip install -r requirements.txt
 ```
 ### Using the code:
-To use the pretrained models and evaluate the models performance run:
+To use the pretrained models at `checkpoint/` and evaluate the models performance run:
 ```bash
 test.py
 ```
