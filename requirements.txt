@@ -10,7 +10,7 @@ attrs==19.1.0
 audioread==2.1.8
 backcall==0.1.0
 beautifulsoup4==4.6.0
-bleach==3.1.0
+bleach==3.1.1
 Brlapi==0.6.6
 caffe==1.0.0
 caffe2==0.8.1
