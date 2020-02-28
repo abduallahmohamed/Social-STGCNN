@@ -2,12 +2,12 @@
 ### Abduallah Mohamed, Kun Qian <br />
 ### Mohamed Elhoseiny** , Christian Claudel**
 ##### <sup>**</sup> Equal advising
-Presented at [CVPR 2020](http://cvpr2020.thecvf.com/)
+Read full paper <a href="https://arxiv.org/abs/2002.11927">here</a>, Presented at [CVPR 2020](http://cvpr2020.thecvf.com/)
 
 ### Social-STGCNN
 We propose the Social Spatio-Temporal Graph Convolutional Neural Network (Social-STGCNN), which models the problem of human trajectory prediction as a spatio-temporal graph. Our results show an improvement over the state of art by 20\% on the Final Displacement Error (FDE) and an improvement on the Average Displacement Error (ADE) with 8.5 times less parameters and up to 48 times faster inference speed than previously reported methods. In addition, our model is data efficient, and exceeds previous state of the art on the ADE metric with only 20\% of the training data. We propose a kernel function to embed the social interactions between pedestrians within the adjacency matrix.
 
-Our model inference speed is 0.002s (500Hz) using only 7.6K parameters.
+Our model inference speed is 0.002s/frame (500Hz) using only 7.6K parameters.
 
 #### Model
 <div align='center'>
