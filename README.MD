@@ -61,7 +61,3 @@ To train a model for each data set with the best configuration as in the paper, 
 ```
 Please note: The initiation of training and testing might take a while as the code creates a cache to store the spatio-temporal graphs.
 
-
-
-
-.
