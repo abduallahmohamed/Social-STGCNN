@@ -6,7 +6,7 @@ Read full paper <a href="https://arxiv.org/abs/2002.11927">here</a>, Presented a
 
 ### Social-STGCNN
 <div align='center'>
-<img src="Social-STGCNN-Teaser_.jpg"></img>
+<img src="images/Social-STGCNN-Teaser_.jpg"></img>
 </div>
 <br />
 
