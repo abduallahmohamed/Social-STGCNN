@@ -16,7 +16,7 @@ import torch.optim as optim
 
 
 class ConvTemporalGraphical(nn.Module):
-
+    #Source : https://github.com/yysijie/st-gcn/blob/master/net/st_gcn.py
     r"""The basic module for applying a graph convolution.
     Args:
         in_channels (int): Number of channels in the input sequence data
@@ -41,7 +41,6 @@ class ConvTemporalGraphical(nn.Module):
             :math:`T_{in}/T_{out}` is a length of input/output sequence,
             :math:`V` is the number of graph nodes. 
     """
-
     def __init__(self,
                  in_channels,
                  out_channels,
@@ -52,11 +51,10 @@ class ConvTemporalGraphical(nn.Module):
                  t_dilation=1,
                  bias=True):
         super(ConvTemporalGraphical,self).__init__()
-#         print("outch",out_channels)
         self.kernel_size = kernel_size
         self.conv = nn.Conv2d(
             in_channels,
-            out_channels * kernel_size,
+            out_channels,
             kernel_size=(t_kernel_size, 1),
             padding=(t_padding, 0),
             stride=(t_stride, 1),
@@ -65,14 +63,8 @@ class ConvTemporalGraphical(nn.Module):
 
     def forward(self, x, A):
         assert A.size(0) == self.kernel_size
-
         x = self.conv(x)
-#         print("xinner:",x.shape)
-
-        n, kc, t, v = x.size()
-        x = x.view(n, self.kernel_size, kc//self.kernel_size, t, v)
-        x = torch.einsum('nkctv,kvw->nctw', (x, A))
-
+        x = torch.einsum('nctv,tvw->nctw', (x, A))
         return x.contiguous(), A
     
 
