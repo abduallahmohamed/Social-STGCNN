@@ -72,4 +72,4 @@ To train a model for each data set with the best configuration as in the paper, 
 ./train.sh  
 ```
 Please note: The initiation of training and testing might take a while as the code creates a cache to store the spatio-temporal graphs.
-
+Exact CVPR version: https://github.com/abduallahmohamed/Social-STGCNN/tree/ebd57aaf34d84763825d05cf9d4eff738d8c96bb
