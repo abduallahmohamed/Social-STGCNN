@@ -17,23 +17,14 @@ Our model inference speed is 0.002s/frame (500Hz) using only 7.6K parameters.
 You can cite our paper using: 
 ```
 @INPROCEEDINGS{9156583,
-
   author={A. {Mohamed} and K. {Qian} and M. {Elhoseiny} and C. {Claudel}},
-
   booktitle={2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
-
   title={Social-STGCNN: A Social Spatio-Temporal Graph Convolutional Neural Network for Human Trajectory Prediction}, 
-
   year={2020},
-
   volume={},
-
   number={},
-
   pages={14412-14420},
-
   doi={10.1109/CVPR42600.2020.01443}}
-
 ```
 
 
