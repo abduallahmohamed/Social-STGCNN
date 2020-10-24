@@ -53,7 +53,8 @@ def fde(predAll,targetAll,count_):
     return sum_all/All
 
 
-def seq_to_nodes(seq_,max_nodes = 88):
+def seq_to_nodes(seq_):
+    max_nodes = seq_.shape[1] #number of pedestrians in the graph
     seq_ = seq_.squeeze()
     seq_len = seq_.shape[2]
     
