@@ -75,4 +75,6 @@ Please note: The initiation of training and testing might take a while as the co
 <br />
 Exact CVPR version: https://github.com/abduallahmohamed/Social-STGCNN/tree/ebd57aaf34d84763825d05cf9d4eff738d8c96bb
 
-Check our work in the 3D mode: https://github.com/abduallahmohamed/Skeleton-Graph
+### Check our work in the 3D motion prediction (ICCV2021): https://github.com/abduallahmohamed/Skeleton-Graph
+
+### Check our latest work in motion prediction (ECCV2022): Social-Implicit https://github.com/abduallahmohamed/Social-Implicit
