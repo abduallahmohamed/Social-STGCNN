@@ -4,6 +4,8 @@
 ##### <sup>**</sup> Equal advising
 Read full paper <a href="https://arxiv.org/abs/2002.11927">here</a>, Presented at [CVPR 2020](http://cvpr2020.thecvf.com/)
 
+### Check our latest work in motion prediction with new metrics (ECCV2022): Social-Implicit https://github.com/abduallahmohamed/Social-Implicit
+
 ### Social-STGCNN
 <div align='center'>
 <img src="images/Social-STGCNN-Teaser_.jpg"></img>
@@ -77,4 +79,4 @@ Exact CVPR version: https://github.com/abduallahmohamed/Social-STGCNN/tree/ebd57
 
 ### Check our work in the 3D motion prediction (ICCV2021): https://github.com/abduallahmohamed/Skeleton-Graph
 
-### Check our latest work in motion prediction (ECCV2022): Social-Implicit https://github.com/abduallahmohamed/Social-Implicit
+
